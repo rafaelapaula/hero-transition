@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850ACEB0217DE99D00D58E9E /* HTItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ACEAF217DE99D00D58E9E /* HTItemTableViewCell.swift */; };
+		850ACEB2217DEB2900D58E9E /* HTGenericRouterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ACEB1217DEB2900D58E9E /* HTGenericRouterDelegate.swift */; };
+		850ACEB9217DEC8B00D58E9E /* HTDetailWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ACEB3217DEC8B00D58E9E /* HTDetailWorker.swift */; };
+		850ACEBA217DEC8B00D58E9E /* HTDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ACEB4217DEC8B00D58E9E /* HTDetailRouter.swift */; };
+		850ACEBB217DEC8B00D58E9E /* HTDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850ACEB5217DEC8B00D58E9E /* HTDetailViewController.storyboard */; };
+		850ACEBC217DEC8B00D58E9E /* HTDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ACEB6217DEC8B00D58E9E /* HTDetailModels.swift */; };
+		850ACEBD217DEC8B00D58E9E /* HTDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ACEB7217DEC8B00D58E9E /* HTDetailViewController.swift */; };
+		850ACEBE217DEC8B00D58E9E /* HTDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850ACEB8217DEC8B00D58E9E /* HTDetailInteractor.swift */; };
 		850B61BC217A583A0012AAA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61BB217A583A0012AAA1 /* AppDelegate.swift */; };
 		850B61BE217A583A0012AAA1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61BD217A583A0012AAA1 /* ViewController.swift */; };
 		850B61C1217A583A0012AAA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850B61BF217A583A0012AAA1 /* Main.storyboard */; };
@@ -16,6 +24,12 @@
 		850B61DC217A583D0012AAA1 /* HeroTransitionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61DB217A583D0012AAA1 /* HeroTransitionsUITests.swift */; };
 		850B61ED217A623D0012AAA1 /* HTGenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61EC217A623D0012AAA1 /* HTGenericViewController.swift */; };
 		850B61EF217A628A0012AAA1 /* HTGenericInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61EE217A628A0012AAA1 /* HTGenericInteractorProtocol.swift */; };
+		850B61F8217A759B0012AAA1 /* HTListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61F2217A759B0012AAA1 /* HTListWorker.swift */; };
+		850B61F9217A759B0012AAA1 /* HTListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61F3217A759B0012AAA1 /* HTListRouter.swift */; };
+		850B61FA217A759B0012AAA1 /* HTListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850B61F4217A759B0012AAA1 /* HTListViewController.storyboard */; };
+		850B61FB217A759B0012AAA1 /* HTListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61F5217A759B0012AAA1 /* HTListModels.swift */; };
+		850B61FC217A759B0012AAA1 /* HTListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61F6217A759B0012AAA1 /* HTListViewController.swift */; };
+		850B61FD217A759B0012AAA1 /* HTListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850B61F7217A759B0012AAA1 /* HTListInteractor.swift */; };
 		ABD08495A012E25AF87BE90F /* Pods_HeroTransitionsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D76416AC764076A833AA3F6 /* Pods_HeroTransitionsUITests.framework */; };
 		BE7FD55B041D32C873FA1453 /* Pods_HeroTransitions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E0F6F6B26198A6B652360F /* Pods_HeroTransitions.framework */; };
 		CA1AF21FD0251356E709F47F /* Pods_HeroTransitionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D1D5893118FCE33B45D13F /* Pods_HeroTransitionsTests.framework */; };
@@ -45,6 +59,14 @@
 		5F2D6B58488712BD75865685 /* Pods-HeroTransitionsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroTransitionsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroTransitionsUITests/Pods-HeroTransitionsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6D76416AC764076A833AA3F6 /* Pods_HeroTransitionsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroTransitionsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		828CE9FB3C7202C306026817 /* Pods-HeroTransitions.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroTransitions.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeroTransitions/Pods-HeroTransitions.release.xcconfig"; sourceTree = "<group>"; };
+		850ACEAF217DE99D00D58E9E /* HTItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTItemTableViewCell.swift; sourceTree = "<group>"; };
+		850ACEB1217DEB2900D58E9E /* HTGenericRouterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTGenericRouterDelegate.swift; sourceTree = "<group>"; };
+		850ACEB3217DEC8B00D58E9E /* HTDetailWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTDetailWorker.swift; sourceTree = "<group>"; };
+		850ACEB4217DEC8B00D58E9E /* HTDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTDetailRouter.swift; sourceTree = "<group>"; };
+		850ACEB5217DEC8B00D58E9E /* HTDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HTDetailViewController.storyboard; sourceTree = "<group>"; };
+		850ACEB6217DEC8B00D58E9E /* HTDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTDetailModels.swift; sourceTree = "<group>"; };
+		850ACEB7217DEC8B00D58E9E /* HTDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTDetailViewController.swift; sourceTree = "<group>"; };
+		850ACEB8217DEC8B00D58E9E /* HTDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTDetailInteractor.swift; sourceTree = "<group>"; };
 		850B61B8217A583A0012AAA1 /* HeroTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		850B61BB217A583A0012AAA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		850B61BD217A583A0012AAA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +82,12 @@
 		850B61DD217A583D0012AAA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		850B61EC217A623D0012AAA1 /* HTGenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTGenericViewController.swift; sourceTree = "<group>"; };
 		850B61EE217A628A0012AAA1 /* HTGenericInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTGenericInteractorProtocol.swift; sourceTree = "<group>"; };
+		850B61F2217A759B0012AAA1 /* HTListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTListWorker.swift; sourceTree = "<group>"; };
+		850B61F3217A759B0012AAA1 /* HTListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTListRouter.swift; sourceTree = "<group>"; };
+		850B61F4217A759B0012AAA1 /* HTListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HTListViewController.storyboard; sourceTree = "<group>"; };
+		850B61F5217A759B0012AAA1 /* HTListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTListModels.swift; sourceTree = "<group>"; };
+		850B61F6217A759B0012AAA1 /* HTListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTListViewController.swift; sourceTree = "<group>"; };
+		850B61F7217A759B0012AAA1 /* HTListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTListInteractor.swift; sourceTree = "<group>"; };
 		88906261DE779D22F5CF606E /* Pods-HeroTransitions.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroTransitions.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeroTransitions/Pods-HeroTransitions.debug.xcconfig"; sourceTree = "<group>"; };
 		96E0F6F6B26198A6B652360F /* Pods_HeroTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroTransitions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1D1D5893118FCE33B45D13F /* Pods_HeroTransitionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeroTransitionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +201,7 @@
 			children = (
 				850B61EC217A623D0012AAA1 /* HTGenericViewController.swift */,
 				850B61EE217A628A0012AAA1 /* HTGenericInteractorProtocol.swift */,
+				850ACEB1217DEB2900D58E9E /* HTGenericRouterDelegate.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -187,6 +216,13 @@
 		850B61F0217A64E10012AAA1 /* Table */ = {
 			isa = PBXGroup;
 			children = (
+				850B61F2217A759B0012AAA1 /* HTListWorker.swift */,
+				850B61F3217A759B0012AAA1 /* HTListRouter.swift */,
+				850B61F4217A759B0012AAA1 /* HTListViewController.storyboard */,
+				850B61F5217A759B0012AAA1 /* HTListModels.swift */,
+				850B61F6217A759B0012AAA1 /* HTListViewController.swift */,
+				850B61F7217A759B0012AAA1 /* HTListInteractor.swift */,
+				850ACEAF217DE99D00D58E9E /* HTItemTableViewCell.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -194,6 +230,12 @@
 		850B61F1217A64F40012AAA1 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				850ACEB3217DEC8B00D58E9E /* HTDetailWorker.swift */,
+				850ACEB4217DEC8B00D58E9E /* HTDetailRouter.swift */,
+				850ACEB5217DEC8B00D58E9E /* HTDetailViewController.storyboard */,
+				850ACEB6217DEC8B00D58E9E /* HTDetailModels.swift */,
+				850ACEB7217DEC8B00D58E9E /* HTDetailViewController.swift */,
+				850ACEB8217DEC8B00D58E9E /* HTDetailInteractor.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -320,7 +362,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				850B61C6217A583D0012AAA1 /* LaunchScreen.storyboard in Resources */,
+				850B61FA217A759B0012AAA1 /* HTListViewController.storyboard in Resources */,
 				850B61C3217A583D0012AAA1 /* Assets.xcassets in Resources */,
+				850ACEBB217DEC8B00D58E9E /* HTDetailViewController.storyboard in Resources */,
 				850B61C1217A583A0012AAA1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,10 +481,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850ACEB9217DEC8B00D58E9E /* HTDetailWorker.swift in Sources */,
+				850ACEB2217DEB2900D58E9E /* HTGenericRouterDelegate.swift in Sources */,
+				850ACEBC217DEC8B00D58E9E /* HTDetailModels.swift in Sources */,
+				850ACEB0217DE99D00D58E9E /* HTItemTableViewCell.swift in Sources */,
+				850B61F9217A759B0012AAA1 /* HTListRouter.swift in Sources */,
+				850B61FD217A759B0012AAA1 /* HTListInteractor.swift in Sources */,
+				850B61F8217A759B0012AAA1 /* HTListWorker.swift in Sources */,
 				850B61BE217A583A0012AAA1 /* ViewController.swift in Sources */,
+				850ACEBA217DEC8B00D58E9E /* HTDetailRouter.swift in Sources */,
 				850B61ED217A623D0012AAA1 /* HTGenericViewController.swift in Sources */,
+				850ACEBD217DEC8B00D58E9E /* HTDetailViewController.swift in Sources */,
+				850B61FC217A759B0012AAA1 /* HTListViewController.swift in Sources */,
 				850B61EF217A628A0012AAA1 /* HTGenericInteractorProtocol.swift in Sources */,
+				850ACEBE217DEC8B00D58E9E /* HTDetailInteractor.swift in Sources */,
 				850B61BC217A583A0012AAA1 /* AppDelegate.swift in Sources */,
+				850B61FB217A759B0012AAA1 /* HTListModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
