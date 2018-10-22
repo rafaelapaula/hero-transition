@@ -15,7 +15,12 @@
 class HTListWorker {
     
     
-    func generateData() -> [String] {
-        return ["Olá", "Teste", "Testando", "Jovem", "Oi", "Bom dia", "Boa noite", "Boa tarde", "Testei", "Testado", "...", "Boa vida"]
+    func generateData() -> [(String, Ancor)] {
+        return [
+            ("Abrir com a navBar de ancora", .navBar),
+            ("Abrir com a label de ancora", .label),
+            ("Abrir com a textView de ancora", .textView),
+            ("Present com o textView de ancora", .presentTextView)
+        ]
     }
 }

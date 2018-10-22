@@ -24,8 +24,32 @@ class HTDetailViewController: HTGenericViewController, HTDetailViewControllerDel
     lazy var interactor: HTDetailInteractorDelegate? = HTDetailInteractor(self)
     lazy var router: HTDetailRouterDelegate? = HTDetailRouter(self)
     
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var label: UILabel!
+    var ancor = Ancor.navBar
+    
     // MARK: View lifecycle
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        switch ancor {
+        case .navBar:
+            self.setCustomNavigationBar(isHeroEnabled: true)
+        case .label:
+            self.setCustomNavigationBar(isHeroEnabled: false)
+            self.label.hero.id = "redView"
+        case .textView:
+            self.setCustomNavigationBar(isHeroEnabled: false)
+            self.textView.hero.id = "redView"
+        case .presentTextView:
+            self.setCustomNavigationBar(isHeroEnabled: false)
+            self.textView.hero.id = "redView"
+        }
+        
+        
+        textView.text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. fdhjfjhgfd Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. fdhjfjhgfd Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. fdhjfjhgfd"
+    }
     
     // MARK: Actions
     
@@ -37,11 +61,12 @@ class HTDetailViewController: HTGenericViewController, HTDetailViewControllerDel
 
 extension HTDetailViewController {
     
-    public static var instance: HTDetailViewController {
+    public static func instance(_ ancor: Ancor) -> HTDetailViewController {
         let storyboard = UIStoryboard(name: String(describing: HTDetailViewController.self), bundle: nil)
         guard let viewController = storyboard.instantiateInitialViewController() as? HTDetailViewController else {
             fatalError("ViewController must be exists to load scene.")
         }
+        viewController.ancor = ancor
         return viewController
     }
     

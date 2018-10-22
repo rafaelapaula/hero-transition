@@ -12,8 +12,15 @@
 //  Edited by Rodrigo Soldi
 //
 
+enum Ancor {
+    case navBar
+    case label
+    case textView
+    case presentTextView
+}
+
 protocol HTListRouterDelegate: HTGenericRouterDelegate {
-    func toDetail()
+    func toDetail(withAncor: Ancor)
 }
 
 class HTListRouter: HTListRouterDelegate {
@@ -24,8 +31,11 @@ class HTListRouter: HTListRouterDelegate {
         self.viewController = viewController
     }
     
-    func toDetail() {
-        let detailViewController = HTDetailViewController.instance
+    func toDetail(withAncor: Ancor) {
+        let detailViewController = HTDetailViewController.instance(withAncor)
+        detailViewController.hero.isEnabled = true
+        detailViewController.navigationController?.hero.isEnabled = true
+        viewController?.navigationController?.hero.isEnabled = true
         viewController?.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

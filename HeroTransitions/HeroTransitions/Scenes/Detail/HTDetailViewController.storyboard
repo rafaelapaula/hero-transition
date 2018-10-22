@@ -24,20 +24,29 @@
                                 <rect key="frame" x="24" y="96" width="327" height="674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg6-4n-hae">
-                                        <rect key="frame" x="142.66666666666666" y="0.0" width="41.666666666666657" height="20.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="20.333333333333332"/>
+                                        <color key="backgroundColor" red="0.91372549020000005" green="0.71372549019999998" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0QN-NN-U4O">
-                                        <rect key="frame" x="18" y="52.333333333333314" width="291" height="621.66666666666674"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="52.333333333333314" width="327" height="621.66666666666674"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. fdhjfjhgfd</mutableString>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Pg6-4n-hae" secondAttribute="trailing" id="BmO-kc-iml"/>
+                                    <constraint firstItem="Pg6-4n-hae" firstAttribute="top" secondItem="f0Q-AI-X88" secondAttribute="top" id="D1R-eh-Vtw"/>
+                                    <constraint firstItem="Pg6-4n-hae" firstAttribute="leading" secondItem="f0Q-AI-X88" secondAttribute="leading" id="InX-Lj-9oG"/>
+                                    <constraint firstItem="0QN-NN-U4O" firstAttribute="leading" secondItem="f0Q-AI-X88" secondAttribute="leading" id="gvO-v0-CUt"/>
+                                    <constraint firstAttribute="trailing" secondItem="0QN-NN-U4O" secondAttribute="trailing" id="hTI-Yk-20X"/>
+                                    <constraint firstAttribute="bottom" secondItem="0QN-NN-U4O" secondAttribute="bottom" id="iv6-Yi-AEw"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.57647058819999997" green="0.2156862745" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,6 +58,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t0m-on-zgU"/>
+                    <connections>
+                        <outlet property="label" destination="Pg6-4n-hae" id="Mie-JR-J3k"/>
+                        <outlet property="textView" destination="0QN-NN-U4O" id="VSp-hI-fFb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhR-Tv-hir" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

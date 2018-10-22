@@ -21,7 +21,7 @@ enum HTListScene {
             struct Request {
             }
             struct ViewModel {
-                let items: [String]
+                let items: [(String, Ancor)]
             }
         }
     }

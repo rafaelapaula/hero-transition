@@ -24,7 +24,7 @@ class HTListViewController: HTGenericViewController, HTListViewControllerDelegat
     lazy var interactor: HTListInteractorDelegate? = HTListInteractor(self)
     lazy var router: HTListRouterDelegate? = HTListRouter(self)
     
-    var items = [String]()
+    var items = [(String, Ancor)]()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -61,7 +61,8 @@ extension HTListViewController : UITableViewDelegate, UITableViewDataSource {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? HTItemTableViewCell {
             
-            cell.configure(items[indexPath.row])
+            cell.configure(items[indexPath.row].0)
+            cell.hero.isEnabled = true
             cell.hero.id = "redView"
             
             return cell
@@ -72,7 +73,7 @@ extension HTListViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        router?.toDetail()
+        router?.toDetail(withAncor: items[indexPath.row].1)
         print("select item")
         
     }

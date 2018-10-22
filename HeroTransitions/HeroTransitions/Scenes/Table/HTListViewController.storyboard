@@ -31,19 +31,25 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="74.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-LESSONS_Bckg-0" translatesAutoresizingMaskIntoConstraints="NO" id="AcZ-SJ-32J">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74.666666666666671"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyL-be-11V">
                                                     <rect key="frame" x="166.66666666666666" y="27.333333333333336" width="41.666666666666657" height="20.333333333333336"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="AcZ-SJ-32J" firstAttribute="top" secondItem="vph-XZ-IEy" secondAttribute="top" id="83J-vc-puA"/>
+                                                <constraint firstItem="AcZ-SJ-32J" firstAttribute="leading" secondItem="vph-XZ-IEy" secondAttribute="leading" id="Kt5-WR-jLJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="AcZ-SJ-32J" secondAttribute="bottom" id="LRd-wM-We0"/>
+                                                <constraint firstAttribute="trailing" secondItem="AcZ-SJ-32J" secondAttribute="trailing" id="ahM-Bg-b70"/>
                                                 <constraint firstItem="FyL-be-11V" firstAttribute="centerY" secondItem="vph-XZ-IEy" secondAttribute="centerY" id="cWr-QA-baR"/>
                                                 <constraint firstItem="FyL-be-11V" firstAttribute="centerX" secondItem="vph-XZ-IEy" secondAttribute="centerX" id="moE-GI-JU1"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.57647058819999997" green="0.2156862745" blue="0.1960784314" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="titleLabel" destination="FyL-be-11V" id="iuj-lP-Qbx"/>
                                         </connections>
@@ -58,8 +64,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0AN-7x-2Ha" firstAttribute="leading" secondItem="SEX-cn-Q1w" secondAttribute="leading" id="5va-rf-uDZ"/>
-                            <constraint firstItem="0AN-7x-2Ha" firstAttribute="top" secondItem="Xu4-Oq-Twt" secondAttribute="bottom" id="MSU-gg-W1J"/>
                             <constraint firstAttribute="trailing" secondItem="0AN-7x-2Ha" secondAttribute="trailing" id="NZC-bg-H4I"/>
+                            <constraint firstItem="0AN-7x-2Ha" firstAttribute="top" secondItem="Xu4-Oq-Twt" secondAttribute="bottom" id="Y7t-84-GAd"/>
                             <constraint firstAttribute="bottom" secondItem="0AN-7x-2Ha" secondAttribute="bottom" id="uZR-i7-2px"/>
                         </constraints>
                     </view>
@@ -91,4 +97,7 @@
             <point key="canvasLocation" x="760.79999999999995" y="223.15270935960592"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="2-LESSONS_Bckg-0" width="416" height="275"/>
+    </resources>
 </document>
