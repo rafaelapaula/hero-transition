@@ -12,6 +12,8 @@
 //  Edited by Rodrigo Soldi
 //
 
+import UIKit
+
 enum Ancor {
     case navBar
     case label
@@ -35,7 +37,15 @@ class HTListRouter: HTListRouterDelegate {
         let detailViewController = HTDetailViewController.instance(withAncor)
         detailViewController.hero.isEnabled = true
         detailViewController.navigationController?.hero.isEnabled = true
-        viewController?.navigationController?.hero.isEnabled = true
-        viewController?.navigationController?.pushViewController(detailViewController, animated: true)
+        
+        if withAncor == .presentTextView {
+            let navController = UINavigationController(rootViewController: detailViewController)
+            self.viewController?.present(navController, animated: true, completion: nil)
+        } else {
+            viewController?.navigationController?.hero.isEnabled = true
+            viewController?.navigationController?.pushViewController(detailViewController, animated: true)
+        }
+        
+        
     }
 }
